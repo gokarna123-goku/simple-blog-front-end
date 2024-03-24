@@ -26,9 +26,9 @@ const page = async ({ params }: any) => {
 
 
     return (
-        <div className='max-w-7xl mx-auto p-4'>
+        <div className='max-w-6xl mx-auto p-4'>
             <Link href='/'>{"< back to home"}</Link>
-            <div className='relative w-full h-96 overflow-hidden rounded-lg mt-5'>
+            <div className='relative w-full h-[50ch] overflow-hidden rounded-lg mt-5'>
                 <Image layout='fill' objectFit='cover' src={imgUrl} alt={blog.data.attributes.Title} />
             </div>
             <div className='mt-4'>

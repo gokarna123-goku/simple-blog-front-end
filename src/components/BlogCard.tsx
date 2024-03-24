@@ -24,13 +24,12 @@ const BlogCard = ({ blog }: any) => {
 
 
     const imgUrl = "http://localhost:1337" + blog.attributes.img.data.attributes.url
-    // const imgUrl = "http://localhost:1337" + blog.attributes.img.data.attributes.url
 
     return (
-        <div className='rounded-lg shadow-md p-4 mb-4 overflow-hidden border border-neutral-600 cursor-pointer bg-neutral-950'>
+        <div className='rounded-lg shadow-md p-2 mb-4 overflow-hidden border border-neutral-800 cursor-pointer bg-neutral-950'>
             <Link href={`blog/${blog.id}`}>
                 <div className='relative w-full h-1 pb-[100%]'>
-                    <Image layout='fill' objectFit='cover' src={imgUrl} alt='' className='rounded-t-lg' />
+                    <Image layout='fill' objectFit='cover' src={imgUrl} alt={blog.attributes.Title} className='rounded-t-lg' />
                 </div>
                 <div className="p-2">
                     <h2 className="text-xl font-semibold mb-2 text-neutral-200 overflow-ellipsis line-clamp-2">

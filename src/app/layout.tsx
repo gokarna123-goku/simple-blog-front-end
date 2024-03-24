@@ -19,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-auto max-w-screen-lg">
+        <div className="max-auto w-full">
           {/* I am doing this to test the context provider and fetch the category and change the category on click of the category button */}
+          {/* Navbar Section */}
           <CategoryProvider>
             <div className="flex min-h-screen flex-col items-center p-24">{children}</div>
           </CategoryProvider>
+          {/* Footer Section */}
         </div>
       </body>
     </html>
